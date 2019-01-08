@@ -15,6 +15,13 @@ Page({
       url: '../logs/logs'
     })
   },
+
+  gotoNewsList : function() {
+    wx.navigateTo({
+      url: '../toutiao/toutiao',
+    })
+  },
+
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

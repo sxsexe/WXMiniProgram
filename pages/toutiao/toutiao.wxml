@@ -1,0 +1,4 @@
+<!--pages/toutiao/toutiao.wxml-->
+<view wx:for="{{newsData}}" wx:for-index="idx" wx:for-item="newsItem">
+  {{idx}}: {{newsItem.title}}
+</view>
