@@ -1,4 +1,10 @@
 <!--pages/toutiao/toutiao.wxml-->
 <view wx:for="{{newsData}}" wx:for-index="idx" wx:for-item="newsItem">
-  {{idx}}: {{newsItem.title}}
+  <view class="news-item-container-look">
+    <view class="news-item-title">
+      {{idx}}: {{newsItem.title}}
+      <br/>
+      <image src="{{newsItem.thumbnail_pic_s}}" mode='aspectFit'></image>
+    </view>
+  </view>
 </view>

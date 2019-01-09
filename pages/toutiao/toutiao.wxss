@@ -1,1 +1,13 @@
 /* pages/toutiao/toutiao.wxss */
+
+.news-item-container-look {
+  display: flex;
+  flex-direction: column;
+  margin: 40rpx;
+  border: 5px solid red;
+}
+
+.news-item-thumb {
+  width: 200rpx;
+  height: 200rpx;
+}

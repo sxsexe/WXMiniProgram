@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/commodity/home",
+    "pages/toutiao/toutiao",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/toutiao/toutiao"
+    "pages/logs/logs"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

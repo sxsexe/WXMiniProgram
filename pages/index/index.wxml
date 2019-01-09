@@ -9,6 +9,6 @@
   </view>
 
    <view class="usermotto">
-    <button bindtap="gotoNewsList">goto news list</button>
+    <button bindtap="gotoNewsList">今日头条</button>
   </view>
 </view>

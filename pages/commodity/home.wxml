@@ -1,0 +1,35 @@
+<!--pages/commodity/home.wxml-->
+
+<import src="./wxSearch/wxSearch.wxml"/>
+<!--search start-->
+<view class="wxSearch-section">
+   <view class="wxSearch-pancel">
+      <input bindinput="wxSearchInput" bindfocus="wxSerchFocus" value="{{wxSearchData.value}}" bindblur="wxSearchBlur" class="wxSearch-input" placeholder='面膜'/>
+
+    <view class="placeholder">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon> 
+    </view> 
+    <view class='wxSearch-button'>
+      <text>商品分类</text>
+    </view>  
+   </view>
+</view>
+<!--引入模板，注意 is="wxSearch" 和模板template name名称相对应-->
+<template is="wxSearch" data="{{wxSearchData}}"/>
+
+<!--导航栏-->  
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}"
+    class="item {{currentTab==index ? 'active' : ''}}"
+    wx:key="unique" bindtap="navbarTap">{{item}}
+  </text>  
+</view>
+
+<!--banner-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"      duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+</swiper>
