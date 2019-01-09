@@ -3,11 +3,24 @@
 .news-item-container-look {
   display: flex;
   flex-direction: column;
-  margin: 40rpx;
-  border: 5px solid red;
+  margin: 5px auto;
+  height: 400rpx;
+  width: 80%;
+}
+
+.news-item-title {
+  width: 100%;
+  padding-top: 2px;
 }
 
 .news-item-thumb {
-  width: 200rpx;
-  height: 200rpx;
+  width: 300rpx;
+  height: 300rpx;
+  margin: 5px auto;
+}
+
+.item-divider {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid grey;
 }

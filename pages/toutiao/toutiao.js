@@ -91,5 +91,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  showNewsDetail : function(e) {
+    console.log(e);
+    let url = e.currentTarget.id;
+    wx.navigateTo({
+      url: './detail/detail?url='+ url
+    })
   }
 })
