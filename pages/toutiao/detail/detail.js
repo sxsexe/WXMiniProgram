@@ -13,7 +13,7 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
-    // options.url = "http://www.baidu.com"
+    options.url = "https://cn.bing.com/"
     this.setData({ newsUrl : options.url})
   },
 
